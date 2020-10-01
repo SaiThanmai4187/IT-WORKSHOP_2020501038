@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+       <style>
+        body {
+            font-family: Lato, sans-serif;
+            margin:0;
+            background-image: url(background1.jpg);
+            font-weight: 300;
+            }
+        
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        
+        header{
+            background: rgb;
+        }
+        
+        header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .logo{
+            float: left;
+            padding-top: 40px;
+        }
+        nav {
+            float: right;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav li {
+            display: inline-block;
+            margin-left: 70px;
+            padding-top: 50px;
+        
+            position: relative;
+        }
+        nav a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 27px;
+        }
+        nav a:hover {
+            color: red;
+        }
+        
+        nav a::before{
+            content: '';
+            display:block;
+            height: 5px;
+            width: 100%;
+            background-color: red;
+        
+            position: absolute;
+            top: 80px;
+            width: 0%;
+        
+            transition: all ease-in-out 200ms;
+        }
+        nav a:hover::before {
+            width: 100%;
+        }
+    </style>
+      <title>PROJECT</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+  <img src="logo1.jpg" alt"logo" class="logo">
+    <nav>
+        <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">LIBRARY</a></li>
+        <li><a href="#">OUR TEAM</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav> 
+    </body>
+</html>
