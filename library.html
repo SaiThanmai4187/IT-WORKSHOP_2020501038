@@ -2,87 +2,75 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <style>
-        body {
-            font-family: Lato, sans-serif;
-            margin:0;
-            background-image: url(background1.jpg);
-            font-weight: 300;
-            }
+           *{
+               padding: 0;
+               margin: 0;
+               text-decoration: none;
+               list-style: none;
+               box-sizing: border-box;
+           }
+           body{
+               font-family: Lato, sans-serif;
+               font-family: Lato, sans-serif;
+               background: url(background.jpg) no-repeat;
+              background-size: cover;
+              background-position: center;
+              height: calc(100vh - 80px);
+              
+           }
+           nav{
+               background: rgb;
+               height: 80px;
+               width: 100%;
+           }
+           label.logo{
+              color: white;
+              font-size: 35px;
+              line-height: 80px;
+              padding: 0 100px;
+              font-weight: bold; 
+           }
+           nav ul{
+               float: right;
+               margin-right: 20px;
+           }
+           nav ul li {
+               display: inline-block;
+               line-height: 80px;
+               margin: 0 5px;
+           }
+           nav ul li a{
+               color: white;
+               font-size: 17px;
+               padding: 7px 13px;
+               border-radius: 3px;
+               text-transform: uppercase;
+           }
+           a.active,a:hover{
+               background: red;
+               transition: 250ms;
+
+           }
+         
         
-        .container {
-            width: 70%;
-            margin: 0 auto;
-        }
-        
-        header{
-            background: rgb;
-        }
-        
-        header::after {
-            content: '';
-            display: table;
-            clear: both;
-        }
-        .logo{
-            float: left;
-            padding-top: 40px;
-        }
-        nav {
-            float: right;
-        }
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        nav li {
-            display: inline-block;
-            margin-left: 70px;
-            padding-top: 50px;
-        
-            position: relative;
-        }
-        nav a {
-            color: whitesmoke;
-            text-decoration: none;
-            font-size: 27px;
-        }
-        nav a:hover {
-            color: red;
-        }
-        
-        nav a::before{
-            content: '';
-            display:block;
-            height: 5px;
-            width: 100%;
-            background-color: red;
-        
-            position: absolute;
-            top: 80px;
-            width: 0%;
-        
-            transition: all ease-in-out 200ms;
-        }
-        nav a:hover::before {
-            width: 100%;
-        }
     </style>
       <title>PROJECT</title>
     </head>
     <body>
         <header>
-            <div class="container">
-  <img src="logo1.jpg" alt"logo" class="logo">
+            <a href="project_mainpage_2020501038.html">      
+                <img src="Logo1.png" alt"logo" class="logo"></a>
     <nav>
         <ul>
         <li><a href="project_mainpage_2020501038.html">HOME</a></li>
         <li><a href="About.html">ABOUT</a></li>
-        <li><a href="library.html">LIBRARY</a></li>
+        <li><a class="active" href="library.html">LIBRARY</a></li>
         <li><a href="ourteam.html">OUR TEAM</a></li>
         <li><a href="contactus.html">CONTACT US</a></li>
         </ul>
-    </nav> 
+    </nav>
+   
     </body>
 </html>
